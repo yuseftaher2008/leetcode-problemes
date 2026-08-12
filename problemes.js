@@ -51,3 +51,4 @@ function smallingMissingNumber (array){
     console.log(expectedValue)
 }
 
+// link to probleme on leetcode: https://leetcode.com/problems/first-missing-positive/description/
