@@ -50,4 +50,4 @@ function smallingMissingNumber (array){
     }
     console.log(expectedValue)
 }
-smallingMissingNumber([3,2,6,10,82,4])
+
