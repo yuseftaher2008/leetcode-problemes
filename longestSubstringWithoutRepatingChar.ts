@@ -36,14 +36,14 @@ Constraints:
 
 */
 
-function longestSubstringWithoutRepatingChar(s) {
+function longestSubstringWithoutRepatingChar(s: string): number {
     
-    const unique = new Set();
+    const unique: Set<string> = new Set();
 
-    let left = 0;
-    let maxLength = 0;
+    let left: number = 0;
+    let maxLength: number = 0;
 
-    for (let right = 0; right < s.length; right++) {
+    for (let right: number = 0; right < s.length; right++) {
 
         // If the current character already exists
         while (unique.has(s[right])) {

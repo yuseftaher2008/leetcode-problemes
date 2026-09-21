@@ -27,17 +27,18 @@ Constraints:
 -231 <= nums[i] <= 231 - 1
 */
 
-function smallingMissingNumber (array){
+function smallingMissingNumber(array: number[]): number {
      
-    let sortedArray = array.sort((a,b) => a-b)
+    const sortedArray: number[] = array.sort((a: number, b: number) => a-b)
     console.log(sortedArray)
-    const positveArray = sortedArray.filter(num => num >= 0)
+    const positveArray: number[] = sortedArray.filter((num: number) => num >= 0)
     
-    let expectedValue = 1
+    let expectedValue: number = 1
     if (!(positveArray[0] === 1)){
-        return console.log(1)
+        console.log(1)
+        return 1
     }
-    for (let i = 0; i<positveArray.length;i++){
+    for (let i: number = 0; i<positveArray.length;i++){
         if (expectedValue === positveArray[i] ){
             
             expectedValue ++
@@ -49,6 +50,7 @@ function smallingMissingNumber (array){
 
     }
     console.log(expectedValue)
+    return expectedValue
 }
 
 // link to probleme on leetcode: https://leetcode.com/problems/first-missing-positive/description/

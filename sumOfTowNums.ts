@@ -30,17 +30,19 @@ Constraints:
     -109 <= nums[i] <= 109
     -109 <= target <= 109
     Only one valid answer exists.
+
 */
 
-function sumOfTowNums(nums,target){
+function sumOfTowNums(nums: number[], target: number): number[] {
 
-    for (let i = 0 ; i < nums.length; i++ ){
-        for (let j = i+1; j < nums.length; j++){
+    for (let i: number = 0 ; i < nums.length; i++ ){
+        for (let j: number = i+1; j < nums.length; j++){
             if (nums[i]+nums[j] === target){
-                const answer = []
+                const answer: number[] = []
                 answer.push(i,j)
                 return answer 
             }
         }
     }
+    return [];
 }

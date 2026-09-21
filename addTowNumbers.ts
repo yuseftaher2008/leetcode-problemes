@@ -35,22 +35,30 @@ Constraints:
 
 */
 
+class ListNode {
+    val: number;
+    next: ListNode | null;
 
-```js
-var addTwoNumbers = function (l1, l2) {
-    let dummy = new ListNode(0);
-    let current = dummy;
-    let carry = 0;
+    constructor(val: number = 0, next: ListNode | null = null) {
+        this.val = val;
+        this.next = next;
+    }
+}
+
+function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
+    const dummy: ListNode = new ListNode(0);
+    let current: ListNode = dummy;
+    let carry: number = 0;
 
     while (l1 !== null || l2 !== null || carry !== 0) {
-        let val1 = l1 !== null ? l1.val : 0;
-        let val2 = l2 !== null ? l2.val : 0;
+        const val1: number = l1 !== null ? l1.val : 0;
+        const val2: number = l2 !== null ? l2.val : 0;
 
-        let sum = val1 + val2 + carry;
+        const sum: number = val1 + val2 + carry;
 
         carry = Math.floor(sum / 10);
 
-        let digit = sum % 10;
+        const digit: number = sum % 10;
 
         current.next = new ListNode(digit);
         current = current.next;
@@ -65,6 +73,4 @@ var addTwoNumbers = function (l1, l2) {
     }
 
     return dummy.next;
-};
-```
-
+}
