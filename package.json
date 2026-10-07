@@ -1,0 +1,25 @@
+{
+  "name": "leetcode-problemes",
+  "version": "1.0.0",
+  "description": "A collection of algorithm and data structure solutions in TypeScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuseftaher2008/leetcode-problemes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yuseftaher2008/leetcode-problemes/issues"
+  },
+  "homepage": "https://github.com/yuseftaher2008/leetcode-problemes#readme",
+  "devDependencies": {
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
