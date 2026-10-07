@@ -27,6 +27,11 @@ Constraints:
 
 */
 
+
+// solution //
+
+
+/*
 class ListNode<T> {
     constructor(
          public node:T , 
@@ -61,4 +66,4 @@ current = head
 while (current !== null) {
     console.log(current.node);
     current = current.next;
-}
+}*/
