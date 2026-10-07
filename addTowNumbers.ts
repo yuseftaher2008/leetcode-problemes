@@ -35,7 +35,7 @@ Constraints:
 
 */
 
-class ListNode {
+/*class ListNode {
     val: number;
     next: ListNode | null;
 
@@ -74,3 +74,4 @@ function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | nul
 
     return dummy.next;
 }
+    */

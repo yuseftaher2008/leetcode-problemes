@@ -1,4 +1,4 @@
-class ListNode<T> {
+/*class ListNode<T> {
     constructor(
         public node: T,
         public next: ListNode<T> | null = null
@@ -19,4 +19,4 @@ let current: ListNode<number> | null = head;
 while (current !== null) {
     console.log(current.node);
     current = current.next;
-}
+}*/
